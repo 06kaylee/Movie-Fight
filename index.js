@@ -82,11 +82,11 @@ const runComparison = () => {
 		const rightValue = parseInt(rightStat.dataset.value);
 		if (rightValue > leftValue) {
 			leftStat.classList.remove('is-primary');
-			leftStat.classList.add('is-warning');
+			leftStat.classList.add('is-danger');
 		}
 		else {
 			rightStat.classList.remove('is-primary');
-			rightStat.classList.add('is-warning');
+			rightStat.classList.add('is-danger');
 		}
 	});
 };
@@ -126,22 +126,22 @@ const movieTemplate = (movie) => {
             </div>
         </article>
 
-        <article data-value=${awards} class="notification is-primary">
+        <article data-value=${awards} class="notification is-primary is-bold">
             <p class="title">${movie.Awards}</p>
             <p class="subtitle">Awards</p>
         </article>
 
-        <article data-value=${metascore} class="notification is-primary">
+        <article data-value=${metascore} class="notification is-primary is-bold">
             <p class="title">${movie.Metascore}</p>
             <p class="subtitle">Metascore</p>
         </article>
 
-        <article data-value=${imdbRating} class="notification is-primary">
+        <article data-value=${imdbRating} class="notification is-primary is-bold">
             <p class="title">${movie.imdbRating}</p>
             <p class="subtitle">IMDB Rating</p>
         </article>
 
-        <article data-value=${imdbVotes} class="notification is-primary">
+        <article data-value=${imdbVotes} class="notification is-primary is-bold">
             <p class="title">${movie.imdbVotes}</p>
             <p class="subtitle">IMDB Votes</p>
         </article>
